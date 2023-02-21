@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>User Story Definition</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div style="display: flex;">
+      <div class="button-container">
+        <button id="button1">Pitanje 1</button>
+        <button id="button2">Pitanje 2</button>
+        <button id="button3">Pitanje 3</button>
+        <button id="button4">Pitanje 4</button>
+      </div>
+      <div class="content-container">
+  
+        <div id="content1" class="content">
+          <div class="content-center">
+            <h1 id="question">Koji brojevi od navedenih su neparni?</h1>
+            <h3>Moguća su dva točna odgovora.</h3>
+
+            <div class="answers-container">
+              <div class="">
+                <button onclick="buttonColor()" id="buttonclicked" class="answer">2, 4, 6</button>
+                <button onclick="buttonColor()" id="buttonclicked2" class="answer">1, 3, 5</button>
+              </div>
+              <div class="">
+                <button onclick="buttonColor()" id="buttonclicked3" class="answer">8, 10, 12</button>
+                <button onclick="buttonColor()" id="buttonclicked4" class="answer">20, 14, 22</button>
+              </div>
+            </div>
+
+            <button class="next">NEXT</button>
+          </div>   
+
+        </div>
+
+        <div id="content2" class="content">
+          <div class="content-center">
+            <h1>Koliko je 2 + 5?</h1>
+            <h3>Jedan točan odgovor.</h3>
+
+            <div class="answers-container">
+              <div class="">
+                <button onclick="buttonColor()" id="buttonclicked" class="answer">24</button>
+                <button class="answer">5</button>
+              </div>
+              <div class="">
+                <button class="answer">7</button>
+                <button class="answer">2</button>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div id="content3" class="content">
+          <div class="content-center">
+            <h1>Kolika je konverzija € u kn?</h1>
+            <h3>Odaberite odgovor s 3 decimale.</h3>
+          </div> 
+
+          <div class="answers-container">
+            <div class="">
+              <button class="answer">7.25</button>
+              <button class="answer">7.534</button>
+            </div>
+            <div class="">
+              <button class="answer">7.543</button>
+              <button class="answer">7.5528</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="content4" class="content">
+          <div class="content-center">
+            <h1>Koliko je 5 * 5?</h1>
+            <h3>Mogućnost više odgovora.</h3>
+          </div> 
+
+          <div class="answers-container">
+            <div class="">
+              <button class="answer">45</button>
+              <button class="answer">25</button>
+            </div>
+            <div class="">
+              <button class="answer">30 - 5</button>
+              <button class="answer">22</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
